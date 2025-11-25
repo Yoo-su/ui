@@ -80,7 +80,7 @@ export const WithLabel: Story = {
   render: (args) => {
     const [value, setValue] = useState("");
     return (
-      <div className="w-[300px]">
+      <div className="size-[300px]">
         <Select {...args} value={value} onChange={setValue}>
           <Select.Label>좋아하는 과일</Select.Label>
           <Select.Trigger />
@@ -102,7 +102,7 @@ export const PreSelected: Story = {
   render: (args) => {
     const [value, setValue] = useState("banana");
     return (
-      <div className="w-[300px] h-[300px]">
+      <div className="size-[300px]">
         <Select {...args} value={value} onChange={setValue}>
           <Select.Label>좋아하는 과일</Select.Label>
           <Select.Trigger />
