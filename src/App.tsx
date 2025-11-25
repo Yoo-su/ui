@@ -9,7 +9,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gray-100 p-8">
-      <h1 className="text-3xl font-bold mb-8">커넥팅더닷츠 UI 과제</h1>
+      <h1 className="text-3xl font-bold mb-8">UI 컴포넌트 샘플</h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="bg-white p-6 rounded-lg shadow">
@@ -20,11 +20,11 @@ function App() {
                 <Select.Label>Select 샘플1</Select.Label>
                 <Select.Trigger />
                 <Select.Content>
-                  <Select.Item value="apple">s1 item-1</Select.Item>
-                  <Select.Item value="banana">s1 item-2</Select.Item>
-                  <Select.Item value="orange">s1 item-3</Select.Item>
-                  <Select.Item value="melon">s1 item-4</Select.Item>
-                  <Select.Item value="grape">s1 item-5</Select.Item>
+                  <Select.Item value="apple">item-1</Select.Item>
+                  <Select.Item value="banana">item-2</Select.Item>
+                  <Select.Item value="orange">item-3</Select.Item>
+                  <Select.Item value="melon">item-4</Select.Item>
+                  <Select.Item value="grape">item-5</Select.Item>
                 </Select.Content>
               </Select>
             </div>
@@ -34,9 +34,9 @@ function App() {
                 <Select.Label>Select 샘플2</Select.Label>
                 <Select.Trigger />
                 <Select.Content>
-                  <Select.Item value="apple">s2 item-1</Select.Item>
-                  <Select.Item value="banana">s2 item-2</Select.Item>
-                  <Select.Item value="orange">s2 item-3</Select.Item>
+                  <Select.Item value="apple">item-1</Select.Item>
+                  <Select.Item value="banana">item-2</Select.Item>
+                  <Select.Item value="orange">item-3</Select.Item>
                 </Select.Content>
               </Select>
             </div>
@@ -60,16 +60,13 @@ function App() {
                 </Select.Content>
               </Select>
             </div>
-            <p>val1: {val1}</p>
-            <p>val2: {val2}</p>
-            <p>val3: {val3}</p>
           </div>
         </div>
 
-        {/* Modal Section */}
+        {/* 모달 섹션 */}
         <div className="bg-white p-6 rounded-lg shadow">
           <h2 className="text-xl font-semibold mb-4">Modal 컴포넌트</h2>
-          <div className="space-y-4">
+          <div className="space-y-4 space-x-2">
             <Modal>
               <Modal.Trigger className="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 transition">
                 모달 트리거
@@ -92,6 +89,26 @@ function App() {
                   >
                     확인
                   </button>
+                </div>
+              </Modal.Content>
+            </Modal>
+
+            <Modal>
+              <Modal.Trigger>
+                <button className="flex items-center justify-center bg-yellow-100 size-[50px] p-2 rounded-full">
+                  M
+                </button>
+              </Modal.Trigger>
+              <Modal.Content>
+                <Modal.Close />
+                <div className="mb-4">
+                  <h2 className="text-lg font-semibold text-gray-900">
+                    동그란 트리거 모달
+                  </h2>
+                </div>
+                <div className="py-4 text-gray-600">
+                  <p>모달 내용</p>
+                  <input type="text" />
                 </div>
               </Modal.Content>
             </Modal>
